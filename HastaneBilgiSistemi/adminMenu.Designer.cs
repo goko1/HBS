@@ -49,8 +49,9 @@ namespace HastaneBilgiSistemi
             this.btnDoctorBransEkle.Name = "btnDoctorBransEkle";
             this.btnDoctorBransEkle.Size = new System.Drawing.Size(104, 52);
             this.btnDoctorBransEkle.TabIndex = 2;
-            this.btnDoctorBransEkle.Text = "Doktor ve Branş Ekle";
+            this.btnDoctorBransEkle.Text = "Doktor Atama";
             this.btnDoctorBransEkle.UseVisualStyleBackColor = true;
+            this.btnDoctorBransEkle.Click += new System.EventHandler(this.btnDoctorBransEkle_Click);
             // 
             // adminMenu
             // 

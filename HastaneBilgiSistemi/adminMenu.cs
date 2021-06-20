@@ -23,5 +23,12 @@ namespace HastaneBilgiSistemi
             adminKullaniciEkle adminKullaniciEkle = new adminKullaniciEkle();
             adminKullaniciEkle.Visible = true;
         }
+
+        private void btnDoctorBransEkle_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            adminDoktorAtamaForm adminDoktorAtamaForm = new adminDoktorAtamaForm();
+            adminDoktorAtamaForm.Visible = true;
+        }
     }
 }

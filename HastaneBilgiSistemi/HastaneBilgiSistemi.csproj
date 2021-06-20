@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="adminDoktorAtamaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminDoktorAtamaForm.Designer.cs">
+      <DependentUpon>adminDoktorAtamaForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="adminKullaniciEkleme.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,11 +64,11 @@
     <Compile Include="adminMenu.Designer.cs">
       <DependentUpon>adminMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="doctorForm.cs">
+    <Compile Include="doctorMuayeneForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="doctorForm.Designer.cs">
-      <DependentUpon>doctorForm.cs</DependentUpon>
+    <Compile Include="doctorMuayeneForm.Designer.cs">
+      <DependentUpon>doctorMuayeneForm.cs</DependentUpon>
     </Compile>
     <Compile Include="formGiris.cs">
       <SubType>Form</SubType>
@@ -70,28 +76,31 @@
     <Compile Include="formGiris.Designer.cs">
       <DependentUpon>formGiris.cs</DependentUpon>
     </Compile>
-    <Compile Include="personelForm.cs">
+    <Compile Include="personelHastaKayitForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="personelForm.Designer.cs">
-      <DependentUpon>personelForm.cs</DependentUpon>
+    <Compile Include="personelHastaKayitForm.Designer.cs">
+      <DependentUpon>personelHastaKayitForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="adminDoktorAtamaForm.resx">
+      <DependentUpon>adminDoktorAtamaForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="adminKullaniciEkleme.resx">
       <DependentUpon>adminKullaniciEkleme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="adminMenu.resx">
       <DependentUpon>adminMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="doctorForm.resx">
-      <DependentUpon>doctorForm.cs</DependentUpon>
+    <EmbeddedResource Include="doctorMuayeneForm.resx">
+      <DependentUpon>doctorMuayeneForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formGiris.resx">
       <DependentUpon>formGiris.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="personelForm.resx">
-      <DependentUpon>personelForm.cs</DependentUpon>
+    <EmbeddedResource Include="personelHastaKayitForm.resx">
+      <DependentUpon>personelHastaKayitForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -118,7 +127,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="DB\HastaneBilgiSistemiDB.accdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

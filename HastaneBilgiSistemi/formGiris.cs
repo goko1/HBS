@@ -48,17 +48,20 @@ namespace HastaneBilgiSistemi
                 }
                 else if (kullaniciTipi == "Personel")
                 {
-                    //Giris işlemi için : database de bu kullanici adi ve şifresi doğru mu diye kontrol edilir:
                     this.Visible = false;
-                    personelForm personelForm = new personelForm();
+                    personelHastaKayitForm personelForm = new personelHastaKayitForm();
                     personelForm.Visible = true;
                 }
                 else if (kullaniciTipi == "Doktor")
                 {
-                    //Giriş işlemi için : database de bu kullanici adi ve şifresi doğru mu diye kontrol edilir:
+
+                    
+    
                     this.Visible = false;
-                    doctorForm personelForm = new doctorForm();
+                    doctorMuayeneForm personelForm = new doctorMuayeneForm(kullaniciTipi, kullaniciAdi, kullaniciSifre);
                     personelForm.Visible = true;
+                    
+                   
                 }
             }
             
@@ -72,10 +75,10 @@ namespace HastaneBilgiSistemi
             // Connection string and SQL query    //HastaneBilgiSistemiDB.accdb
             // OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=HastaneBilgiSistemiDB.accdb");
 
-            string strSQL = @"SELECT count(*) FROM Kullanicilar k INNER JOIN KullaniciTipi kt ON k.KullaniciTipi=kt.Id " +
+            string strSQL = @"SELECT count(*) FROM Kullanicilar k " +
                 "where k.KullaniciAdi='"+kullaniciAdi+"'" +
                 "and k.Sifre='"+sifre+"' " +
-                "and kt.KullaniciTipi ='"+kullaniciTipi+"'";
+                "and k.KullaniciTipi ='"+kullaniciTipi+"'";
             // Create a connection    
             using (OleDbConnection connection = new OleDbConnection(connectionString))
             {

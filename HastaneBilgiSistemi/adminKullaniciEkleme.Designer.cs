@@ -29,42 +29,40 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtPersonelSifre = new System.Windows.Forms.TextBox();
+            this.txtKullaniciSifre = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.txtPersonelKullaniciAdi = new System.Windows.Forms.TextBox();
+            this.txtKullaniciGirisAdi = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.dateTimePersonel = new System.Windows.Forms.DateTimePicker();
-            this.txtPersonelSoyad = new System.Windows.Forms.TextBox();
-            this.txtPersonelTC = new System.Windows.Forms.TextBox();
-            this.txtPersonelAd = new System.Windows.Forms.TextBox();
+            this.dateTimeKullaniciDogumTarihi = new System.Windows.Forms.DateTimePicker();
+            this.txtKullaniciSoyad = new System.Windows.Forms.TextBox();
+            this.txtKullaniciTCNo = new System.Windows.Forms.TextBox();
+            this.txtKullaniciAd = new System.Windows.Forms.TextBox();
             this.btnPersonelKaydet = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Ad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Soyad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TCNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DogumTarihi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Bolum = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.KullaniciAdi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridKullanicilar = new System.Windows.Forms.DataGridView();
             this.btnSil = new System.Windows.Forms.Button();
             this.btnGeri = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboboxKullaniciTipi = new System.Windows.Forms.ComboBox();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridKullanicilar)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.txtPersonelSifre);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.comboboxKullaniciTipi);
+            this.groupBox2.Controls.Add(this.txtKullaniciSifre);
             this.groupBox2.Controls.Add(this.label14);
-            this.groupBox2.Controls.Add(this.txtPersonelKullaniciAdi);
+            this.groupBox2.Controls.Add(this.txtKullaniciGirisAdi);
             this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.dateTimePersonel);
-            this.groupBox2.Controls.Add(this.txtPersonelSoyad);
-            this.groupBox2.Controls.Add(this.txtPersonelTC);
-            this.groupBox2.Controls.Add(this.txtPersonelAd);
+            this.groupBox2.Controls.Add(this.dateTimeKullaniciDogumTarihi);
+            this.groupBox2.Controls.Add(this.txtKullaniciSoyad);
+            this.groupBox2.Controls.Add(this.txtKullaniciTCNo);
+            this.groupBox2.Controls.Add(this.txtKullaniciAd);
             this.groupBox2.Controls.Add(this.btnPersonelKaydet);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label7);
@@ -77,12 +75,12 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Personel Ekleme";
             // 
-            // txtPersonelSifre
+            // txtKullaniciSifre
             // 
-            this.txtPersonelSifre.Location = new System.Drawing.Point(332, 83);
-            this.txtPersonelSifre.Name = "txtPersonelSifre";
-            this.txtPersonelSifre.Size = new System.Drawing.Size(100, 20);
-            this.txtPersonelSifre.TabIndex = 26;
+            this.txtKullaniciSifre.Location = new System.Drawing.Point(332, 83);
+            this.txtKullaniciSifre.Name = "txtKullaniciSifre";
+            this.txtKullaniciSifre.Size = new System.Drawing.Size(100, 20);
+            this.txtKullaniciSifre.TabIndex = 26;
             // 
             // label14
             // 
@@ -93,12 +91,12 @@
             this.label14.TabIndex = 25;
             this.label14.Text = "Şifre";
             // 
-            // txtPersonelKullaniciAdi
+            // txtKullaniciGirisAdi
             // 
-            this.txtPersonelKullaniciAdi.Location = new System.Drawing.Point(332, 51);
-            this.txtPersonelKullaniciAdi.Name = "txtPersonelKullaniciAdi";
-            this.txtPersonelKullaniciAdi.Size = new System.Drawing.Size(100, 20);
-            this.txtPersonelKullaniciAdi.TabIndex = 24;
+            this.txtKullaniciGirisAdi.Location = new System.Drawing.Point(332, 51);
+            this.txtKullaniciGirisAdi.Name = "txtKullaniciGirisAdi";
+            this.txtKullaniciGirisAdi.Size = new System.Drawing.Size(100, 20);
+            this.txtKullaniciGirisAdi.TabIndex = 24;
             // 
             // label11
             // 
@@ -109,37 +107,37 @@
             this.label11.TabIndex = 23;
             this.label11.Text = "Kullanıcı Adı : ";
             // 
-            // dateTimePersonel
+            // dateTimeKullaniciDogumTarihi
             // 
-            this.dateTimePersonel.Location = new System.Drawing.Point(332, 19);
-            this.dateTimePersonel.Name = "dateTimePersonel";
-            this.dateTimePersonel.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePersonel.TabIndex = 12;
+            this.dateTimeKullaniciDogumTarihi.Location = new System.Drawing.Point(332, 19);
+            this.dateTimeKullaniciDogumTarihi.Name = "dateTimeKullaniciDogumTarihi";
+            this.dateTimeKullaniciDogumTarihi.Size = new System.Drawing.Size(200, 20);
+            this.dateTimeKullaniciDogumTarihi.TabIndex = 12;
             // 
-            // txtPersonelSoyad
+            // txtKullaniciSoyad
             // 
-            this.txtPersonelSoyad.Location = new System.Drawing.Point(101, 51);
-            this.txtPersonelSoyad.Name = "txtPersonelSoyad";
-            this.txtPersonelSoyad.Size = new System.Drawing.Size(100, 20);
-            this.txtPersonelSoyad.TabIndex = 21;
+            this.txtKullaniciSoyad.Location = new System.Drawing.Point(101, 51);
+            this.txtKullaniciSoyad.Name = "txtKullaniciSoyad";
+            this.txtKullaniciSoyad.Size = new System.Drawing.Size(100, 20);
+            this.txtKullaniciSoyad.TabIndex = 21;
             // 
-            // txtPersonelTC
+            // txtKullaniciTCNo
             // 
-            this.txtPersonelTC.Location = new System.Drawing.Point(101, 77);
-            this.txtPersonelTC.Name = "txtPersonelTC";
-            this.txtPersonelTC.Size = new System.Drawing.Size(100, 20);
-            this.txtPersonelTC.TabIndex = 20;
+            this.txtKullaniciTCNo.Location = new System.Drawing.Point(101, 77);
+            this.txtKullaniciTCNo.Name = "txtKullaniciTCNo";
+            this.txtKullaniciTCNo.Size = new System.Drawing.Size(100, 20);
+            this.txtKullaniciTCNo.TabIndex = 20;
             // 
-            // txtPersonelAd
+            // txtKullaniciAd
             // 
-            this.txtPersonelAd.Location = new System.Drawing.Point(101, 23);
-            this.txtPersonelAd.Name = "txtPersonelAd";
-            this.txtPersonelAd.Size = new System.Drawing.Size(100, 20);
-            this.txtPersonelAd.TabIndex = 19;
+            this.txtKullaniciAd.Location = new System.Drawing.Point(101, 23);
+            this.txtKullaniciAd.Name = "txtKullaniciAd";
+            this.txtKullaniciAd.Size = new System.Drawing.Size(100, 20);
+            this.txtKullaniciAd.TabIndex = 19;
             // 
             // btnPersonelKaydet
             // 
-            this.btnPersonelKaydet.Location = new System.Drawing.Point(201, 145);
+            this.btnPersonelKaydet.Location = new System.Drawing.Point(251, 146);
             this.btnPersonelKaydet.Name = "btnPersonelKaydet";
             this.btnPersonelKaydet.Size = new System.Drawing.Size(75, 23);
             this.btnPersonelKaydet.TabIndex = 18;
@@ -183,50 +181,13 @@
             this.label10.TabIndex = 13;
             this.label10.Text = "Ad :";
             // 
-            // dataGridView1
+            // dataGridKullanicilar
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Ad,
-            this.Soyad,
-            this.TCNo,
-            this.DogumTarihi,
-            this.Bolum,
-            this.KullaniciAdi});
-            this.dataGridView1.Location = new System.Drawing.Point(14, 272);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(645, 165);
-            this.dataGridView1.TabIndex = 2;
-            // 
-            // Ad
-            // 
-            this.Ad.HeaderText = "Ad";
-            this.Ad.Name = "Ad";
-            // 
-            // Soyad
-            // 
-            this.Soyad.HeaderText = "Soyad";
-            this.Soyad.Name = "Soyad";
-            // 
-            // TCNo
-            // 
-            this.TCNo.HeaderText = "TCNo";
-            this.TCNo.Name = "TCNo";
-            // 
-            // DogumTarihi
-            // 
-            this.DogumTarihi.HeaderText = "DogumTarihi";
-            this.DogumTarihi.Name = "DogumTarihi";
-            // 
-            // Bolum
-            // 
-            this.Bolum.HeaderText = "Bölüm";
-            this.Bolum.Name = "Bolum";
-            // 
-            // KullaniciAdi
-            // 
-            this.KullaniciAdi.HeaderText = "Kullanıcı Adı";
-            this.KullaniciAdi.Name = "KullaniciAdi";
+            this.dataGridKullanicilar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridKullanicilar.Location = new System.Drawing.Point(14, 272);
+            this.dataGridKullanicilar.Name = "dataGridKullanicilar";
+            this.dataGridKullanicilar.Size = new System.Drawing.Size(645, 165);
+            this.dataGridKullanicilar.TabIndex = 2;
             // 
             // btnSil
             // 
@@ -248,6 +209,27 @@
             this.btnGeri.UseVisualStyleBackColor = true;
             this.btnGeri.Click += new System.EventHandler(this.btnGeri_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(17, 112);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(72, 13);
+            this.label1.TabIndex = 28;
+            this.label1.Text = "Kullanıcı Tipi :";
+            // 
+            // comboboxKullaniciTipi
+            // 
+            this.comboboxKullaniciTipi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboboxKullaniciTipi.FormattingEnabled = true;
+            this.comboboxKullaniciTipi.Items.AddRange(new object[] {
+            "Personel",
+            "Doktor"});
+            this.comboboxKullaniciTipi.Location = new System.Drawing.Point(101, 109);
+            this.comboboxKullaniciTipi.Name = "comboboxKullaniciTipi";
+            this.comboboxKullaniciTipi.Size = new System.Drawing.Size(121, 21);
+            this.comboboxKullaniciTipi.TabIndex = 27;
+            // 
             // adminKullaniciEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -255,41 +237,37 @@
             this.ClientSize = new System.Drawing.Size(687, 514);
             this.Controls.Add(this.btnGeri);
             this.Controls.Add(this.btnSil);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridKullanicilar);
             this.Controls.Add(this.groupBox2);
             this.Name = "adminKullaniciEkle";
             this.Text = "Kullanıcı Ekleme Form";
             this.Load += new System.EventHandler(this.adminForm_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridKullanicilar)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DateTimePicker dateTimePersonel;
-        private System.Windows.Forms.TextBox txtPersonelSoyad;
-        private System.Windows.Forms.TextBox txtPersonelTC;
-        private System.Windows.Forms.TextBox txtPersonelAd;
+        private System.Windows.Forms.DateTimePicker dateTimeKullaniciDogumTarihi;
+        private System.Windows.Forms.TextBox txtKullaniciSoyad;
+        private System.Windows.Forms.TextBox txtKullaniciTCNo;
+        private System.Windows.Forms.TextBox txtKullaniciAd;
         private System.Windows.Forms.Button btnPersonelKaydet;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Ad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Soyad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TCNo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DogumTarihi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Bolum;
+        private System.Windows.Forms.DataGridView dataGridKullanicilar;
         private System.Windows.Forms.Button btnSil;
-        private System.Windows.Forms.TextBox txtPersonelKullaniciAdi;
+        private System.Windows.Forms.TextBox txtKullaniciGirisAdi;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox txtPersonelSifre;
+        private System.Windows.Forms.TextBox txtKullaniciSifre;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.DataGridViewTextBoxColumn KullaniciAdi;
         private System.Windows.Forms.Button btnGeri;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboboxKullaniciTipi;
     }
 }
