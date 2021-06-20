@@ -11,6 +11,9 @@ using System.Windows.Forms;
 
 namespace HastaneBilgiSistemi
 {
+    
+
+
     public partial class adminKullaniciEkle : Form
     {
         public static string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=DB\HastaneBilgiSistemiDB.accdb";

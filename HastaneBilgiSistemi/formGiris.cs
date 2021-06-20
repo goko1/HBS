@@ -17,12 +17,7 @@ namespace HastaneBilgiSistemi
 
         public formGiris()
         {
-
             InitializeComponent();
-
-            
-                
-
         }
 
         //Giris butonuna tıklanınca sisteme giriş yapılır.
@@ -54,37 +49,23 @@ namespace HastaneBilgiSistemi
                 }
                 else if (kullaniciTipi == "Doktor")
                 {
-
-                    
-    
                     this.Visible = false;
                     doctorMuayeneForm personelForm = new doctorMuayeneForm(kullaniciTipi, kullaniciAdi, kullaniciSifre);
                     personelForm.Visible = true;
-                    
-                   
                 }
             }
-            
-
-          
-
         }
 
         public bool GirisDogruMu(string kullaniciTipi, string kullaniciAdi, string sifre)
         {
-            // Connection string and SQL query    //HastaneBilgiSistemiDB.accdb
-            // OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=HastaneBilgiSistemiDB.accdb");
-
             string strSQL = @"SELECT count(*) FROM Kullanicilar k " +
                 "where k.KullaniciAdi='"+kullaniciAdi+"'" +
                 "and k.Sifre='"+sifre+"' " +
                 "and k.KullaniciTipi ='"+kullaniciTipi+"'";
-            // Create a connection    
+            
             using (OleDbConnection connection = new OleDbConnection(connectionString))
             {
-                // Create a command and set its connection    
                 OleDbCommand command = new OleDbCommand(strSQL, connection);
-                // Open the connection and execute the select command.    
                 try
                 {
                     // Open connecton    

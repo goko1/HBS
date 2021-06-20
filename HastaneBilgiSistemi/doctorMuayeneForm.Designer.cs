@@ -31,8 +31,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.cmbDurum = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtSikayet = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.ila = new System.Windows.Forms.Label();
             this.txtAciklama = new System.Windows.Forms.TextBox();
@@ -47,8 +45,6 @@
             // 
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.cmbDurum);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txtSikayet);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.ila);
             this.groupBox1.Controls.Add(this.txtAciklama);
@@ -65,7 +61,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(24, 296);
+            this.label3.Location = new System.Drawing.Point(527, 197);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(44, 13);
             this.label3.TabIndex = 9;
@@ -78,32 +74,15 @@
             this.cmbDurum.Items.AddRange(new object[] {
             "MuayeneEdildi",
             "SevkEdildi"});
-            this.cmbDurum.Location = new System.Drawing.Point(85, 289);
+            this.cmbDurum.Location = new System.Drawing.Point(588, 190);
             this.cmbDurum.Name = "cmbDurum";
             this.cmbDurum.Size = new System.Drawing.Size(135, 21);
             this.cmbDurum.TabIndex = 8;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 208);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 13);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Şikayet : ";
-            // 
-            // txtSikayet
-            // 
-            this.txtSikayet.Location = new System.Drawing.Point(85, 201);
-            this.txtSikayet.Multiline = true;
-            this.txtSikayet.Name = "txtSikayet";
-            this.txtSikayet.Size = new System.Drawing.Size(135, 59);
-            this.txtSikayet.TabIndex = 6;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(510, 204);
+            this.label1.Location = new System.Drawing.Point(265, 193);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 13);
             this.label1.TabIndex = 5;
@@ -112,7 +91,7 @@
             // ila
             // 
             this.ila.AutoSize = true;
-            this.ila.Location = new System.Drawing.Point(256, 208);
+            this.ila.Location = new System.Drawing.Point(11, 197);
             this.ila.Name = "ila";
             this.ila.Size = new System.Drawing.Size(41, 13);
             this.ila.TabIndex = 4;
@@ -120,7 +99,7 @@
             // 
             // txtAciklama
             // 
-            this.txtAciklama.Location = new System.Drawing.Point(575, 204);
+            this.txtAciklama.Location = new System.Drawing.Point(330, 193);
             this.txtAciklama.Multiline = true;
             this.txtAciklama.Name = "txtAciklama";
             this.txtAciklama.Size = new System.Drawing.Size(154, 56);
@@ -128,7 +107,7 @@
             // 
             // txtilaclar
             // 
-            this.txtilaclar.Location = new System.Drawing.Point(320, 201);
+            this.txtilaclar.Location = new System.Drawing.Point(75, 190);
             this.txtilaclar.Multiline = true;
             this.txtilaclar.Name = "txtilaclar";
             this.txtilaclar.Size = new System.Drawing.Size(135, 59);
@@ -177,8 +156,6 @@
         private System.Windows.Forms.Button btnKaydet;
         private System.Windows.Forms.DataGridView dataGridHastalar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtSikayet;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cmbDurum;
     }
