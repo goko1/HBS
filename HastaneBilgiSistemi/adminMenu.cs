@@ -10,16 +10,18 @@ using System.Windows.Forms;
 
 namespace HastaneBilgiSistemi
 {
-    public partial class adminForm : Form
+    public partial class adminMenu : Form
     {
-        public adminForm()
+        public adminMenu()
         {
             InitializeComponent();
         }
 
-        private void adminForm_Load(object sender, EventArgs e)
+        private void btnKullaniciEkle_Click(object sender, EventArgs e)
         {
-
+            this.Visible = false;
+            adminKullaniciEkle adminKullaniciEkle = new adminKullaniciEkle();
+            adminKullaniciEkle.Visible = true;
         }
     }
 }

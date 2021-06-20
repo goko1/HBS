@@ -18,7 +18,7 @@ namespace HastaneBilgiSistemi
         }
 
 
-        //Muayene durumu kaydedilir
+        //Muayene durumu kaydedilir, hastanın durumu Bekliyor durumundan Tedavi Edildi durumuna çevrilir.
         private void btnKaydet_Click(object sender, EventArgs e)
         {
 

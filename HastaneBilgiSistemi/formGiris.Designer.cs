@@ -39,6 +39,7 @@
             // 
             // comboboxKullaniciTipi
             // 
+            this.comboboxKullaniciTipi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboboxKullaniciTipi.FormattingEnabled = true;
             this.comboboxKullaniciTipi.Items.AddRange(new object[] {
             "Admin",
